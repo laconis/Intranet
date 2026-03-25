@@ -1,1 +1,112 @@
+document.write(`
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NicoFlix</title>
+</head>
+
+<body>
+<header>Intranet Nicolas</header>
+
+<div id="menu">
+<ul>
+<li><a href="#" class="menuItem">Admin</a></li>
+<li><a href="#" class="menuItem">Admin2</a></li>
+<li><a href="#" class="menuItem">Catégories</a></li>
+</ul>
+</div>
+
+<div id="searchMaster">
+<input type="text" class="seaTxt" placeholder="rechercher module(s)">
+</div>
+
+
+<div id="content">
+
+<div class="detailModules">Annuaire</div>
+<div class="detailModules">Document</div>
+<div class="detailModules">Gestion</div>
+<div class="detailModules">Finances</div>
+<div class="detailModules">Annuaire</div>
+<div class="detailModules">Document</div>
+<div class="detailModules">Gestion</div>
+<div class="detailModules">Finances</div>
+<div class="detailModules">Annuaire</div>
+<div class="detailModules">Document</div>
+<div class="detailModules">Gestion</div>
+<div class="detailModules">Finances</div>
+<div class="detailModules">Annuaire</div>
+<div class="detailModules">Document</div>
+<div class="detailModules">Gestion</div>
+<div class="detailModules">Finances</div>
+
+</div>
+
+
+
+</body>
+
+
+<style>
+
+
+:root {
+  --color-primary: #0a22f7;
+  --color-primary-light: #4d63ff;
+  --color-primary-xlight: #e8ecff;
+  --color-primary-dark: #081bc5;
+  --color-primary-deep: #050f7a;
+  --color-text: #1a1a1a;
+  --color-text-light: #555;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f5f7ff;
+}
+
+
+li{list-style-type:none;}
+header{line-height:50px;height:50px;text-align:center;color:black;}
+#menu{background-color:color:white;height:50px;margin-bottom:50px;}
+#searchMaster{line-height:50px;height:50px;}
+#content{display:block;width:1300px;margin:auto;}
+.seaTxt{display:block;width:800px;margin:auto;height:30px;}
+.detailModules{width:200px;height:200px;background-color:#f0f0f0;float:left;margin:25px;box-shadow: 0 8px 20px rgba(0, 0, 0,0.25);}
+.detailModules:hover{ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);cursor:pointer;}
+.menuItem{width:150px;height:40px;color:#4287f5;float:left;text-align:center;}
+.menuItem:hover{border-bottom:3px solid  #4287f5;animation-name:ol;animation-duration:0.2s;}
+
+
+@keyframes ol{
+from{border-bottom:none;background-color:white;}
+to{border-bottom:3px solid  #4287f5;}
+}
+
+body {
+ margin:auto;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+   color:white;
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+
+</style>
+
+</html>
+
+
+
+
+`);
